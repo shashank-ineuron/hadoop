@@ -9,3 +9,6 @@ hadoop fs -mkdir /input_data
 
 # Copy data from local file system to Hdfs
 hadoop fs -put test_demo/trees.csv /input_data
+
+# Copy from HDFS path to local file system
+hadoop fs -copyToLocal /input_data/trees.csv ./
