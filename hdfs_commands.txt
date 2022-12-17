@@ -1,0 +1,11 @@
+# In hdfs file system / is the root
+
+# Command to check the files inside root hdfs directory
+hadoop fs -ls /
+
+# Command to create directory in hdfs
+hadoop fs -mkdir /input_data
+
+
+# Copy data from local file system to Hdfs
+hadoop fs -put test_demo/trees.csv /input_data
